@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+    <!-- <script src="mark.js" defer></script> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            background-color: lightblue;
+            color: blueviolet;
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+
+        .nav-bar li {
+            text-decoration: none;
+            list-style-type: none;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+
+        /* Push the first li to the left */
+        .nav-bar li:first-child {
+            margin-right: auto;
+        }
+
+        /*Push the last child to right*/
+        .nav-bar li:last-child {
+            margin-right: 200px;
+        }
+
+        #pic {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            float: right;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-top: 10px;
+            line-height: 1.5;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #img1 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            margin-top: 20px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #searchbtn {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <li>Hyderabad</li>
+        <li>
+            <input id="search" type="text" placeholder="Search">
+            <input type="button" id="searchbtn" value="Search" onclick="reclaim();">
+        </li>
+
+    </div>
+    <img id="pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAC9xQSP_-Qj32KoOjBRQRSapX9D56QzRQw&s"
+        alt="">
+    <p id="content">
+        <strong>Hyderabad</strong> is the capital and largest city of the Indian state of Telangana. It occupies 650km
+        <sup>2</sup> on the <a href="https://en.wikipedia.org/wiki/Deccan_Plateau">Deccan Plateau</a> along the blanks
+        of the <a href="https://en.wikipedia.org/wiki/Musi_River_(India)">Musi River</a>, in the Northern part of
+        Southern India. With an average altitude of 542m (1,778 ft), musch of Hyderabad is situated on hilly terrain
+        around <a href="https://en.wikipedia.org/wiki/Lakes_in_Hyderabad">artificial lakes,</a> including the <a
+            href="https://en.wikipedia.org/wiki/Hussain_Sagar">Hussian Sagar</a> lake, predating the city's founding, in
+        the north of the city centre. According to the <a href="https://en.wikipedia.org/wiki/2011_census_of_India">2011
+            census of India</a>, Hyderabad is the <a
+            href="https://en.wikipedia.org/wiki/List_of_cities_in_India_by_population">fourth-most populous city in
+            India</a> with a population of 6.9 million residents within city limits, and has a population of 9.7 million
+        residents in the <a href="https://en.wikipedia.org/wiki/Hyderabad_Metropolitan_Region">metropolitan region</a>,
+        making it the <a href="https://en.wikipedia.org/wiki/List_of_metropolitan_areas_in_India">sixth-most populous
+            metropolitian area</a> in India. With an output of US $74 billion, Hyderabad has the fifth-largest urban
+        economy in India.
+        <br>
+        <br>
+        The Qutb Shahi dynasty's <a href="https://en.wikipedia.org/wiki/Muhammad_Quli_Qutb_Shah">Muhammad Quil Qutb
+            Shah</a> established Hyderabad in 1591 to extend the capital beyond the <a
+            href="https://en.wikipedia.org/wiki/Golconda">fortified Golconda</a>. In 1687, <a
+            href="https://en.wikipedia.org/wiki/Siege_of_Golconda">the city was
+            annexed</a> by the <a href="https://en.wikipedia.org/wiki/Mughal_Empire">Mughals</a>. In 1724, <a
+            href="https://en.wikipedia.org/wiki/Asaf_Jahi_dynasty">Asaf Jah I</a>, the <a
+            href="https://en.wikipedia.org/wiki/Viceroy_of_the_Deccan">Mughal viceroy</a>, declared his sovereignty and
+        founded the <a href="https://en.wikipedia.org/wiki/Asaf_Jahi_dynasty">Asaf Jahi dynasty</a>, also known as the
+        <a href="https://en.wikipedia.org/wiki/Nizam_of_Hyderabad">Nizams.</a>
+        Hyderabad served as the imperial capital of the Asaf Jahis from 1769 to 1948. As capital of the <a
+            href="https://en.wikipedia.org/wiki/Princely_state">princely state of Hyderabad</a>, the city housed the <a
+            href="https://en.wikipedia.org/wiki/British_Residency,_Hyderabad">British Residency</a> and <a
+            href="https://en.wikipedia.org/wiki/Secunderabad_Cantonment_Board">cantonment</a> until <a
+            href="https://en.wikipedia.org/wiki/Indian_Independence_Act_1947">Indian Independence</a> in 1947. <a
+            href="https://en.wikipedia.org/wiki/Annexation_of_Hyderabad">Hyderabad was annexed</a> by the <a
+            href="https://en.wikipedia.org/wiki/Dominion_of_India">Indian Union</a> in 1948 and continued as a capital
+        of <a href="https://en.wikipedia.org/wiki/Hyderabad_State_(1948%E2%80%931956)">Hyderabad State</a> from 1948 to
+        1956. After <a href="https://en.wikipedia.org/wiki/Gentlemen%27s_Agreement_of_1956">the introduction</a> of the
+        <a href="https://en.wikipedia.org/wiki/States_Reorganisation_Act,_1956">States Reorganisation Act of 1956</a>,
+        Hyderabad was made the capital of the <a
+            href="https://en.wikipedia.org/wiki/Andhra_Pradesh_(1956%E2%80%932014)">newly formed Andhra Pradesh</a>. In
+        2014, <a href="https://en.wikipedia.org/wiki/Andhra_Pradesh_Reorganisation_Act,_2014">Andhra Pradesh was
+            spilt</a> to form the state of Telangana, and Hyderabad became the joint capital of the two states with a
+        transitional arragement scheduled to end in 2024. <sup><a
+                href="https://en.wikipedia.org/wiki/Hyderabad#cite_note-6">[6]</a></sup> Since 1956, the city has housed
+        the <a href="https://en.wikipedia.org/wiki/Rashtrapati_Nilayam">Rashtrapati Nilayam</a>, the winter office of
+        the <a href="https://en.wikipedia.org/wiki/President_of_India">president of India</a>.
+        <br>
+        <br>
+        Relics of the Qutb Shahi and Nizam eras remain visible today; the <a
+            href="https://en.wikipedia.org/wiki/Charminar">Charminar</a> has come to symbolise the city. By the end of
+        the early modern era, the Mughal Empire had declined in the Deccan, and the Nizam's patronage attracted men of
+        letters from various parts of the world. <a href="https://en.wikipedia.org/wiki/Culture_of_Hyderabad">A
+            distinctive culture</a> arose from the amalgamation of the local and migrated artisans, with <a
+            href="https://en.wikipedia.org/wiki/Deccan_painting">painting,</a><a
+            href="https://en.wikipedia.org/wiki/Bidriware"> handicraft,</a><a
+            href="https://en.wikipedia.org/wiki/Jewels_of_the_Nizams_of_Hyderabad"> jewellery,</a><a
+            href="https://en.wikipedia.org/wiki/Deccani_Masnavi"> literature,</a><a
+            href="https://en.wikipedia.org/wiki/Deccani_language"> dialect</a> and <a
+            href="https://en.wikipedia.org/wiki/Clothing_of_Hyderabad,_India">clothing</a> prominent even today. For <a
+            href="https://en.wikipedia.org/wiki/Hyderabadi_cuisine"> its cuisine</a>, the city is listed as a <a
+            href="https://en.wikipedia.org/wiki/City_of_Gastronomy">creative city of gastronomy</a> by <a
+            href="https://en.wikipedia.org/wiki/UNESCO">UNESCO</a>. The <a
+            href="https://en.wikipedia.org/wiki/Telugu_cinema">Telugu film industry</a> based in the city is the highest
+        grossing film industry in India as of 2021.
+        <br>
+        <br>
+        Until the 19th century, Hyderabad was known for the <a
+            href="https://en.wikipedia.org/wiki/Hyderabadi_pearls">pearl industry</a> and was nicknamed the "City of
+        Pearls", and was the only trading centre for <a href="https://en.wikipedia.org/wiki/Golconda_diamonds">Golconda
+            diamonds</a> in the world. Many of the city's historical and traditional <a
+            href="https://en.wikipedia.org/wiki/Bazaar">bazaars</a> reamin open. Hyderabad's central location between
+        the <a href="https://en.wikipedia.org/wiki/Deccan_Plateau">Deccan Plateau</a> and the <a
+            href="https://en.wikipedia.org/wiki/Western_Ghats">Western Ghats</a>, and industrialisation throughout the
+        20th century attracted major Indian research, manufacturing, educational and financial institutions. Since the
+        1990s, the city has emerged as an <a href="https://en.wikipedia.org/wiki/Genome_Valley">Indian hub of
+            pharmaceuticals and biotechnology</a> and information technology.
+        The formation of the <a href="https://en.wikipedia.org/wiki/Special_economic_zone">special economic zones</a> of
+        <a href="https://en.wikipedia.org/wiki/Hardware_Park,_Hyderabad">Hardware Park</a> and <a
+            href="https://en.wikipedia.org/wiki/HITEC_City">Hitech City,</a> dedicated to information technology, has
+        encouraged leading multinationals to set up operations in Hyderabad.
+        <br>
+        <img id="img1"
+            src="https://assets.architecturaldigest.in/photos/6008258f345ead69c9c1b006/master/w_1600%2Cc_limit/GettyImages-140700416.jpg"
+            alt="">
+        <br>
+        <strong>HITEC CITY</strong> was commissioned by the erstwhile <a
+            href="https://en.wikipedia.org/wiki/Andhra_Pradesh_(1956%E2%80%932014)">Government of United Andhra
+            Pradesh</a>, adjoining Cyderabad to the west of Hyderabad and was inaugurated by then Prime Minister of
+        India <a href="https://en.wikipedia.org/wiki/Atal_Bihari_Vajpayee">Atal Bihari Vajpayee</a> on 22 November 1998.
+        <sup><a href="https://en.wikipedia.org/wiki/HITEC_City#cite_note-2">[2]</a></sup> In 1997, The Chief Minister <a
+            href="https://en.wikipedia.org/wiki/N._Chandrababu_Naidu">N. Chandra Babu Naidu</a> travelled to Southeast
+        Asia to meet potential investors and to 'market the state' and was impressed with the larger technology related
+        developments of Singapore and Malaysia - especially Multimedia Super Corridor (MSC) near Kuala Lumpur. Soon
+        after coming back from his Southeast Asia tour, Naidu initiated a $350 million knowledge enclave in Hyderabad,
+        leading to birth of HITEC City. Cyber Towers was the first tower to be built for promotion of Information
+        Technology(IT) within 14 months and the attractive unique design was selected by <a
+            href="https://en.wikipedia.org/wiki/N._Chandrababu_Naidu">N. Chandrababu Naidu</a> <sup>[4]</sup> in 1997 to
+        stand as a Monument in city of Hyderabad and as architecture master piece in the center of Cyberabad with
+        transforming the city of Pearls, Hyderabad as the city of Destiny for IT and pharmaceutical companies while also
+        set up a separate <a href="https://en.wikipedia.org/wiki/Cyberabad_Metropolitan_Police">Cyberabad Metropolitan
+            Police</a> commissionerate and totally revamped the way of policing under safety and surveillance
+        accomplishing HITECH CITY has emerged as the symbolic heart of cosmopolitan Hyderabad and it was initially
+        marketed by both the officials of APIIC and L&T Infocity Ltd (the public and private sector partner). Companies
+        such as Orbees Business Solutions, Knowledge Matrix India Pvt Ltd., 7 Hills Business Solutions, AppLabs, Keane
+        Inc NTT DATA, Microsoft, Patni Computer Systems, Oracle Corporation, GE Capital, Whishworks, Prithvi Information
+        Solutions, Naia Software Solutions India Pvt Ltd., Four Soft operate and call centers operate from this
+        four-quadrant, 10-story building. The Cyber Towers building is divided into four quadrants with a large fountain
+        in the middle of the quadrants. <sup>[5]</sup>Another large building of office space named Cyber Gateway has
+        been built comprises over 866,000 square feet (80,500 sq.meters) across 8 acres (3.25 ha).
+        <br>
+        <br>
+        <strong>TCS DECCAN PARK</strong> The Deccan park is the largest global development centre of the Tata
+        Consultancy Services. The facility was designed by Swiss architect Mario Botta. The Deccan Park has been set up
+        with an estimated investment of ₹15 billion with recreation and sporting facilities, which houses more than
+        2,200 professionals. The centre has been set up in 11 acres (4.5 ha) of land, with a built-up area around
+        320,000 ft2 (30,000 m <sup>2</sup> ) on 9 floors. The centre works in domain areas such as telecommunications,
+        e-governance,
+        biological sciences, ports, and shipping and also deploy technologies including .Net, opensource billing and
+        bioinformatics.
+
+
+    </p>
+</body>
+<script>
+    const p = document.getElementById('content');
+
+    function reclaim() {
+        // Clear any existing highlights by removing the <mark> tags
+        p.innerHTML = p.innerHTML.replace(/<mark>(.*?)<\/mark>/g, "$1");
+
+        let input = document.getElementById('search').value;
+        input = input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+        if (input !== "") {
+            // Use a recursive function to replace the text nodes while preserving HTML structure
+            highlightText(p, new RegExp(`(${input})`, "gi"));
+        }
+    }
+
+    function highlightText(node, regex) {
+        // Convert to array to avoid live node list issues
+        const childNodes = Array.from(node.childNodes);
+
+        for (let i = 0; i < childNodes.length; i++) {
+            const child = childNodes[i];
+            if (child.nodeType === 3) { // If it's a text node
+                const text = child.nodeValue;
+                const highlightedText = text.replace(regex, "<mark>$1</mark>");
+
+                if (highlightedText !== text) {
+                    // If text was highlighted, replace the text node with new HTML
+                    const tempDiv = document.createElement("div");
+                    tempDiv.innerHTML = highlightedText;
+
+                    while (tempDiv.firstChild) {
+                        node.insertBefore(tempDiv.firstChild, child);
+                    }
+
+                    node.removeChild(child);
+                }
+            } else if (child.nodeType === 1 && child.nodeName !== "MARK") {
+                // If it's an element node and not a <mark> tag, recursively highlight it
+                highlightText(child, regex);
+            }
+        }
+    }
+
+
+
+
+</script>
+
+</html>
